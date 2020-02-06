@@ -1,0 +1,35 @@
+@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/colors.scss";
+
+.sign-up-button {
+  padding: 0;
+  border: none;
+  background-color: $jacksons-purple;
+  color: $white;
+  cursor: pointer;
+  @include button;
+  overflow: hidden;
+
+  &--text {
+    padding: space(20);
+    display: inline-block;
+  }
+
+  &--icon {
+    padding-right: space(20);
+  }
+
+  &--hover {
+    @include hover-left-to-right($white);
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    background-color: $gray;
+  }
+}
+
+.underline-from-left {
+  @include hover-left-to-right($white);
+}

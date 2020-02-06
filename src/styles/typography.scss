@@ -1,0 +1,187 @@
+@import "./fonts.scss";
+@import "./breakpoints.scss";
+@import "./mixins.scss";
+@import "./colors.scss";
+
+// Headings
+
+@mixin heading-xl {
+  font-family: $greycliffe-bold;
+  font-size: pxtorem(44px);
+  line-height: 1.18;
+
+  @include for-tablet-down {
+    font-size: pxtorem(26px);
+  }
+}
+
+@mixin heading-l {
+  font-family: $greycliffe-bold;
+  font-size: pxtorem(36px);
+  line-height: 1.19;
+
+  @include for-tablet-down {
+    font-size: pxtorem(26px);
+    line-height: 1.17;
+  }
+}
+
+@mixin heading-m {
+  font-family: $greycliffe-bold;
+  font-size: pxtorem(24px);
+  line-height: 1.2;
+
+  @include for-tablet-down {
+    font-size: pxtorem(18px);
+    line-height: 1.3;
+  }
+}
+
+@mixin heading-m-alt {
+  font-family: $greycliffe-bold;
+  font-size: pxtorem(34px);
+  line-height: 0.85;
+
+  @include for-tablet-down {
+    font-size: pxtorem(18px);
+    line-height: 1.16;
+  }
+}
+
+@mixin heading-s {
+  font-family: $greycliffe-demi-bold;
+  font-size: pxtorem(16px);
+  line-height: 1.18;
+
+  @include for-tablet-down {
+    font-size: pxtorem(14px);
+    line-height: 1.21;
+  }
+}
+
+// Body
+
+@mixin body-m-regular {
+  font-family: $apercu;
+  font-size: pxtorem(18px);
+  line-height: 1.16;
+
+  @include for-tablet-down {
+    font-size: pxtorem(14px);
+    line-height: 2;
+  }
+}
+
+@mixin body-m-medium {
+  font-family: $apercu-medium;
+  font-size: pxtorem(18px);
+  line-height: 1.16;
+
+  @include for-tablet-down {
+    font-size: pxtorem(14px);
+    line-height: 1.21;
+  }
+}
+
+@mixin body-s-light {
+  font-family: $apercu-light;
+  font-size: pxtorem(16px);
+  line-height: 1.3;
+
+  @include for-tablet-down {
+    font-size: pxtorem(14px);
+    line-height: 1.21;
+  }
+}
+
+@mixin body-s-regular {
+  font-family: $apercu;
+  font-size: pxtorem(16px);
+  line-height: 1.3;
+
+  @include for-tablet-down {
+    font-size: pxtorem(14px);
+    line-height: 1.21;
+  }
+}
+
+@mixin body-alt {
+  font-family: $hk-serif;
+  font-size: pxtorem(20px);
+  line-height: 1.2;
+
+  @include for-tablet-down {
+    font-size: pxtorem(14px);
+  }
+}
+
+@mixin section-title {
+  font-family: $apercu-medium;
+  font-size: pxtorem(16px);
+  line-height: 1.18;
+  text-transform: capitalize;
+  letter-spacing: 5.5;
+}
+
+@mixin section-title-alt {
+  font-family: $apercu-medium;
+  font-size: pxtorem(16px);
+  line-height: 1.18;
+  text-transform: capitalize;
+  letter-spacing: 5.5;
+
+  @include for-tablet-down {
+    font-size: pxtorem(14px);
+    line-height: 1.21;
+  }
+}
+
+@mixin quote {
+  font-family: $greycliffe-bold;
+  font-size: pxtorem(24px);
+  line-height: 1.08;
+
+  @include for-tablet-down {
+    font-size: pxtorem(18px);
+    line-height: 1.3;
+  }
+}
+
+@mixin caption {
+  font-family: $apercu;
+  font-size: pxtorem(14px);
+  line-height: 1.14;
+
+  @include for-tablet-down {
+    font-size: pxtorem(10px);
+    line-height: 1.1;
+  }
+}
+
+@mixin list {
+  font-family: $greycliffe-demi-bold;
+  font-size: pxtorem(16px);
+  line-height: 1.18;
+
+  @include for-tablet-down {
+    font-family: $greycliffe;
+  }
+}
+
+@mixin code {
+  font-family: $source-code-pro;
+  font-size: pxtorem(18px);
+  line-height: 1.2;
+  color: $puerto-rico;
+  background-color: $light-gray;
+
+  @include for-tablet-down {
+    font-size: pxtorem(16px);
+    line-height: 1.25;
+  }
+}
+
+@mixin button {
+  font-family: $apercu;
+  font-size: pxtorem(20px);
+}

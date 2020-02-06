@@ -1,0 +1,65 @@
+@function pxtorem($pixels) {
+  /* Convert px to rem using base font of 16px */
+  @return $pixels / 16px * 1rem;
+}
+
+@function space($pixels) {
+  /* Map px to rem values */
+  $spaceamounts: (
+    8: pxtorem(8px),
+    10: pxtorem(10px),
+    12: pxtorem(12px),
+    16: pxtorem(16px),
+    20: pxtorem(20px),
+    24: pxtorem(24px),
+    32: pxtorem(32px),
+    40: pxtorem(40px),
+    48: pxtorem(48px),
+    56: pxtorem(56px),
+    64: pxtorem(64px),
+    72: pxtorem(72px),
+    80: pxtorem(80px),
+    88: pxtorem(88px),
+    96: pxtorem(96px),
+    104: pxtorem(104px),
+    112: pxtorem(112px),
+    120: pxtorem(120px)
+  );
+
+  @return map-get($spaceamounts, $pixels);
+}
+
+@mixin hover-left-to-right($color) {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: $color;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    right: 0;
+  }
+
+  &:hover:disabled {
+    right: 100%;
+  }
+}

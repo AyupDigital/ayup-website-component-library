@@ -1,0 +1,95 @@
+@import "../../styles/colors.scss";
+@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
+
+.button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  @include button;
+
+  &--main {
+    background-color: $black;
+    color: $white;
+
+    span {
+      display: inline-block;
+      padding: space(20);
+      padding-right: space(16);
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+      background-color: $medium-gray;
+      color: #d8d8d8;
+
+      svg {
+        color: #d8d8d8;
+      }
+    }
+
+    &--icon {
+      display: inline;
+      vertical-align: middle;
+      color: $white;
+
+      div {
+        display: inline;
+        padding: space(12) space(20) space(20) 0;
+      }
+    }
+
+    &--hover {
+      @include hover-left-to-right($puerto-rico);
+    }
+  }
+
+  &--alt {
+    display: inline-block;
+    border: 2px solid $black;
+    overflow: hidden;
+
+    span {
+      display: inline-block;
+      padding: space(20);
+      padding-right: space(16);
+    }
+
+    &--icon {
+      display: inline-block;
+      vertical-align: middle;
+      color: $black;
+
+      div {
+        display: inline;
+        padding: space(12) space(20) space(20) 0;
+      }
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      svg {
+        transition: 0.9s;
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover:disabled {
+      svg {
+        transform: none;
+      }
+    }
+
+    &--disabled {
+      cursor: not-allowed;
+      color: $dark-gray;
+      border: 2px solid $dark-gray;
+
+      svg {
+        color: $dark-gray;
+      }
+    }
+  }
+}

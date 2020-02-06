@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Icons/ mail</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons/-mail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy" transform="translate(4.000000, 7.000000)" fill="#2B2B2B" fill-rule="nonzero">
+            <path d="M9.45754242,4.25474864 C9.19344327,3.99841712 8.80655673,3.99841712 8.54245758,4.25474864 L6.71748133,5.6875 L1.5625,0 L16.4375,0 L11.2711346,5.6875 L9.45754242,4.25474864 Z M9,5.93933665 L16.2746228,13 L1.72537715,13 L9,5.93933665 Z M12.3668863,7.07086331 L17.5,1.21875 L17.5,11.78125 L12.3668863,7.07086331 Z M5.66933472,7.0376252 L0.5,11.78125 L0.5,1.21875 L5.66933472,7.0376252 Z" id="Triangle" transform="translate(9.000000, 6.500000) scale(1, -1) translate(-9.000000, -6.500000) "></path>
+        </g>
+        <rect id="Rectangle-Copy-7" x="0" y="0" width="26" height="26"></rect>
+    </g>
+</svg>

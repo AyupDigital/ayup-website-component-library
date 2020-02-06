@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+@font-face {
+  font-family: "Greycliffe CF Bold";
+  src: url("../assets/fonts/greycliff-cf-bold.woff2") format("woff2"),
+    url("../assets/fonts/greycliff-cf-bold.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "Greycliffe CF Demi Bold";
+  src: url("../assets/fonts/greycliff-cf-demi-bold.woff2") format("woff2"),
+    url("../assets/fonts/greycliff-cf-demi-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Greycliffe CF Medium";
+  src: url("../assets/fonts/greycliff-cf-medium.woff2") format("woff2"),
+    url("../assets/fonts/greycliff-cf-medium.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "Apercu Medium";
+  src: url("../assets/fonts/apercu-medium.woff2") format("woff2"),
+    url("../assets/fonts/apercu-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Apercu Regular";
+  src: url("../assets/fonts/apercu-regular.woff2") format("woff2"),
+    url("../assets/fonts/apercu-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Apercu Light";
+  src: url("../assets/fonts/apercu-light.woff2") format("woff2"),
+    url("../assets/fonts/apercu-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HK Serif Regular";
+  src: url("../assets/fonts/hk-serif.woff2") format("woff2"),
+    url("../assets/fonts/hk-serif.woff") format("woff");
+}
+
+$greycliffe-bold: "Greycliffe CF Bold", sans-serif;
+$greycliffe-demi-bold: "Greycliffe CF Demi Bold", sans-serif;
+$greycliffe: "Greycliffe CF Medium", sans-serif;
+
+$apercu-medium: "Apercu Medium", sans-serif;
+$apercu: "Apercu Regular", sans-serif;
+$apercu-light: "Apercu Light", sans-serif;
+
+$hk-serif: "HK Serif Regular", sans-serif;
+
+$source-code-pro: "Source Code Pro", monospace;
