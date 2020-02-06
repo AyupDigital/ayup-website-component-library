@@ -1,0 +1,33 @@
+@import "../../styles/typography.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
+
+.link {
+  @include button;
+  text-decoration: none;
+  color: $black;
+  display: block;
+
+  &--text {
+    line-height: 0;
+  }
+
+  &--container {
+    width: max-content;
+    padding-bottom: space(12);
+    border-bottom: 2px solid $puerto-rico;
+  }
+
+  &--icon {
+    display: inline;
+
+    div {
+      display: inline;
+      padding-left: space(12);
+    }
+
+    svg {
+      vertical-align: bottom;
+    }
+  }
+}
